@@ -592,6 +592,7 @@ GameObject:
   - component: {fileID: 1154233348}
   - component: {fileID: 1154233347}
   - component: {fileID: 1154233346}
+  - component: {fileID: 1154233350}
   m_Layer: 0
   m_Name: ComputerPaddle
   m_TagString: Untagged
@@ -660,7 +661,7 @@ Rigidbody2D:
   m_Mass: 0.5
   m_LinearDamping: 2
   m_AngularDamping: 0
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -742,6 +743,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1154233350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1154233345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 365fa3575e3a9ac418fa87f125818c81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
 --- !u!1 &1469968797
 GameObject:
   m_ObjectHideFlags: 0
@@ -754,6 +768,7 @@ GameObject:
   - component: {fileID: 1469968798}
   - component: {fileID: 1469968801}
   - component: {fileID: 1469968800}
+  - component: {fileID: 1469968802}
   m_Layer: 0
   m_Name: PlayerPaddle
   m_TagString: Untagged
@@ -892,7 +907,7 @@ Rigidbody2D:
   m_Mass: 0.5
   m_LinearDamping: 2
   m_AngularDamping: 0
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -904,6 +919,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 5
+--- !u!114 &1469968802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1469968797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23528f1934ea5734ba55491d27e281ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
 --- !u!1 &1501156119
 GameObject:
   m_ObjectHideFlags: 0
