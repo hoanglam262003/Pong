@@ -770,6 +770,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+  ball: {fileID: 474003075}
 --- !u!1 &1469968797
 GameObject:
   m_ObjectHideFlags: 0
