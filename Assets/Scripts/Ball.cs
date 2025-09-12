@@ -13,15 +13,27 @@ public class Ball : MonoBehaviour
 
     private void Start()
     {
+        ResetPosition();
         AddStartingForce();
     }
 
-    private void AddStartingForce()
+    public void AddStartingForce()
     {
         float x = Random.value < 0.5f ? -1f : 1f;
         float y = Random.value < 0.5f ? Random.Range(-1f, -0.5f) : Random.Range(0.5f, 1f);
 
         Vector2 direction = new Vector2(x, y);
         rb.AddForce(direction * speed);
+    }
+
+    public void AddForce(Vector2 force)
+    {
+        rb.AddForce(force);
+    }
+
+    public void ResetPosition()
+    {
+        rb.position = Vector3.zero;
+        rb.linearVelocity = Vector3.zero;
     }
 }
